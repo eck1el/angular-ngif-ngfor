@@ -1,0 +1,16 @@
+<div>
+    <p>Nombre del empleado: {{nombre}}</p>
+    <p>Edad: {{edad}}</p>
+    <p *ngIf="edad>37">Es mayor de edad</p>
+
+    <table border="1">
+        <tr>
+            <td>sueldos</td>
+        </tr>
+        <tr *ngFor="let sueldo of sueldos">
+            <td>{{sueldo}}</td>
+        </tr>
+    </table>
+</div>
+
+<router-outlet></router-outlet>
